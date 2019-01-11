@@ -1,0 +1,71 @@
+@import './partials/colors';
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.6rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav--transparent {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.6rem;
+  transition: all 0.5s ease-in-out;
+}
+
+// nav title
+.nav__title-wrap {
+  display: flex;
+}
+
+.nav__title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: 'Segoe Print', cursive;
+}
+
+// nav hamburger menu
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 3.4rem;
+  height: 2.4rem;
+  background: none;
+  border: none;
+  padding: 0.4rem 0;
+  margin-left: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggler__bar {
+  width: 2.4rem;
+  height: 0.2rem;
+  background-color: $white;
+}
+
+// nav links
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-nav {}
+
+.nav-item {}
+
+.nav-link {}

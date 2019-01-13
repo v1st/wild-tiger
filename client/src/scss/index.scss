@@ -2,12 +2,9 @@
 @import './partials/colors';
 
 .App {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 300vh;
+  height: 3000px;
   background-color: $dark;
-}
-
-h1 {
-  font-size: 3.4rem;
-  font-family: 'Gloria Hallelujah', cursive;
 }

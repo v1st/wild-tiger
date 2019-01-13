@@ -2,13 +2,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Thasadith', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.625rem;
   color: #FFFFFF;
+}
 
-  html,
-  body {
-    width: 100vw;
-    min-height: 100vh;
-  }
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 3000px;
 }

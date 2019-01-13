@@ -1,2 +1,85 @@
 @import './partials/colors';
 
+.homepage__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  overflow: hidden;
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+}
+
+.header__image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+}
+
+.header-info__container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  height: 15rem;
+  background: $primary;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  bottom: 15rem;
+  z-index: 1
+}
+
+.header-info__title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-info__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-style: italic;  
+  text-transform: uppercase;
+}
+
+.line-break {
+  width: 14rem;
+  height: 0.1rem;
+  background-color: $tan;
+}
+
+.header-info__quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: 300;
+}
+
+.order__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  height: 3rem;
+  background-color: $secondary;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+// banner
+.header__banner {
+  position: absolute;
+  width: 150%;
+  height: 20rem;
+  background-color: $tan;
+  transform: rotate(-6deg);
+  bottom: 3rem;
+  left: -25%;
+  z-index: 0;
+}  

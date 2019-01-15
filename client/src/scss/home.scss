@@ -1,5 +1,6 @@
 @import './partials/colors';
 
+// homepage content
 .homepage__container {
   position: relative;
   display: flex;
@@ -60,7 +61,7 @@
   font-weight: 300;
 }
 
-.order__button {
+.main__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,12 +71,15 @@
   border: none;
   font-size: 1.4rem;
   text-transform: uppercase;
+
   &:hover {
     cursor: pointer;
   }
+
   &:focus {
     outline: none;
   }
+
   &:active {
     transform: translateY(2px);
   }
@@ -214,4 +218,47 @@
   background: $tan;
   bottom: 0;
   right: 0;
+}
+
+// Parallax Image
+.parallax__image {
+  background: url(../images/parallax.jpg) no-repeat fixed center;
+  background-size: cover;
+  height: 25rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+// Location info
+.location__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 94%;
+  height: 15rem;
+  background-color: $tan;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.location__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.location__address {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: $dark;
+  text-align: center;
+  width: 50%;
+}
+
+.phone-number {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $primary;
 }

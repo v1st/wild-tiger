@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import HourChart from './HourChart';
+import ParallaxImage from './ParallaxImage';
 import '../../scss/home.scss';
 
 class Homepage extends Component {
@@ -13,7 +15,7 @@ class Homepage extends Component {
               <span className="line-break"></span>
             </div>
             <div className="header-info__quote">"Delicious dishes from fresh ingredients"</div>
-            <button className="order__button">Order Now</button>
+            <button className="main__button">Order Now</button>
           </div>
           <div className="header__banner"></div>
           <div className="icon__wrap">
@@ -31,34 +33,14 @@ class Homepage extends Component {
             </div>
           </div>
         </div>
-
-        <div className="home-content__wrap">
-          <div className="hours__wrap">
-            <div className="hours__container">
-              <div className="hours__title">Hours</div>
-              <div className="schedule__wrap">
-                <div className="schedule__days">
-                  <span className="schedule__text">Monday</span>
-                  <span className="schedule__text">Tuesday</span>
-                  <span className="schedule__text">Wednesday</span>
-                  <span className="schedule__text">Thursday</span>
-                  <span className="schedule__text">Friday</span>
-                  <span className="schedule__text">Saturday</span>
-                  <span className="schedule__text">Sunday</span>
-                </div>
-                <div className="schedule__times">
-                  <span className="schedule__text">11AM-9PM</span>
-                  <span className="schedule__text">11AM-9PM</span>
-                  <span className="schedule__text">11AM-9PM</span>
-                  <span className="schedule__text">11AM-9PM</span>
-                  <span className="schedule__text">11AM-10PM</span>
-                  <span className="schedule__text">12PM-10PM</span>
-                  <span className="schedule__text">12PM-9PM</span>
-                </div>
-              </div>
-            </div>
-            <div className="hours__backdrop"></div>
-          </div>
+        <HourChart />
+        <ParallaxImage />
+        <div className="location__container">
+          <div className="location__title">Location</div>
+          <div className="location__address">1825 SE 164th AVE Suite 101
+VANCOUVER, WA 98683</div>
+          <div className="phone-number">360-882-8887</div>
+          <button className="main__button">Facebook</button>
         </div>
       </React.Fragment>
     )
